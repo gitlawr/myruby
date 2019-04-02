@@ -21,4 +21,4 @@ COPY . /usr/src/app
 # For Rails
 ENV PORT 5000
 EXPOSE $PORT
-CMD ["sh", "-c", "bundle exec rails server -p ${PORT}"]
+CMD ["sh", "-c", "bundle exec rails server -b 0.0.0.0 -p ${PORT}"]
